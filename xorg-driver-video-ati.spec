@@ -2,15 +2,15 @@
 
 Summary:	X.org video drivers for ATI adapters
 Name:		xorg-driver-video-ati
-Version:	7.3.0
+Version:	7.5.0
 %if "%{gitver}" != "%{nil}"
 Release:	0.%{gitver}.1
 Source0:	http://cgit.freedesktop.org/xorg/driver/xf86-video-ati/snapshot/xf86-video-ati-%{gitver}.tar.bz2
-# Source0-md5:	f36383c590d56a9304e5cab4813a6653
+# Source0-md5:	29654190e37310b87e44a14c229967ee
 %else
 Release:	1
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-ati-%{version}.tar.bz2
-# Source0-md5:	f36383c590d56a9304e5cab4813a6653
+# Source0-md5:	29654190e37310b87e44a14c229967ee
 %endif
 License:	MIT
 Group:		X11/Applications
@@ -18,7 +18,6 @@ URL:		http://xorg.freedesktop.org/
 BuildRequires:	Mesa-libGL-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	glamor-devel
 BuildRequires:	libdrm-devel
 BuildRequires:	libtool
 BuildRequires:	pkg-config
